@@ -1,0 +1,32 @@
+.menu{
+    max-width: var(--width);
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--background-green);
+    color: var(--color-white);
+}
+
+.menu-list{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.menu-link a{
+    color: var(--color-white);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    padding: 15px;
+    display: inline-flex;
+}
+
+.menu-link a:hover{
+    color: #814813;;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
