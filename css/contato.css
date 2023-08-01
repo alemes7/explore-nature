@@ -1,0 +1,22 @@
+.contato{
+    margin-left: auto;
+}
+
+#contato-maintittle{
+    color: #565756;
+    font-family: Playfair Display SC;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.contato-list{
+    display: flex;
+}
+
+#contato-list-itens{
+    padding: 50px;
+}

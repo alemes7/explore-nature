@@ -1,0 +1,39 @@
+.faq{
+    margin-left: 180px;
+    display: inline-block;
+}
+
+#faq-maintittle{
+    color: #565756;
+    font-family: Playfair Display SC;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#faq-maindiv{
+    width: 1168px;
+    height: 1716.7px;
+}
+
+.faq-section{
+    display: flex;
+    max-width: 720px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#faq-section-tittle{
+    color: #814813;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #D8D8D8
+}

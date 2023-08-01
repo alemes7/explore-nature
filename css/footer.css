@@ -1,0 +1,14 @@
+.footer{
+    max-width: var(--width);
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    background-color: var(--background-green);
+    color: #fff;
+}
+
+.footer-text{
+    padding: 20px;
+    color: var(--color-white);
+}

@@ -4,10 +4,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: var(--background-green);
-    color: var(--color-white);
+    color: #fff;
 }
 
-.menu-list{
+.menu-lista{
     display: flex;
     padding: 10px;
     flex-wrap: wrap;

@@ -1,0 +1,40 @@
+.natureza-section{
+    display: flex;
+    gap: 20px;
+}
+
+.natureza-texto h2{
+    color: #814813;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+}
+
+.natureza-texto p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.home-lista{
+    height: 50vh;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden; /* hidden vai esconder o scroll para a horizontal */
+    position: relative;
+}
+
+.home-lista::-webkit-scrollbar{
+    background-color: #d8d8d8;
+}
+
+.home-lista::-webkit-scrollbar-thumb{
+    background-color: #75d2a8;
+    border-radius: 7px;
+}
+
+img{
+    width: 300px;
+    height: 53vh;
+}
