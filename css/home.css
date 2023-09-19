@@ -38,3 +38,11 @@ img{
     width: 300px;
     height: 53vh;
 }
+
+.js-conteudo section{
+    display: none;
+}
+
+.js-conteudo section.active{
+    display: block;
+}
