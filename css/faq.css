@@ -1,39 +1,48 @@
-.faq{
-    margin-left: 180px;
-    display: inline-block;
-}
-
-#faq-maintittle{
-    color: #565756;
-    font-family: Playfair Display SC;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-#faq-maindiv{
-    width: 1168px;
-    height: 1716.7px;
-}
-
-.faq-section{
+.pergunta{
+    margin-bottom: 10px;
     display: flex;
-    max-width: 720px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
+    align-items: center;
+    border-bottom: solid 1px #D8D8D8;
+    transition: all 0.5s ease-in-out;
 }
 
-#faq-section-tittle{
-    color: #814813;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-bottom: 1px solid #D8D8D8
+
+
+.resposta{
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 0;
+}
+
+
+.faq{
+    max-width: 1200px;
+    margin-top: 2rem;
+    margin-left:11.5%;
+    cursor: pointer;
+    font-display: var(--font-display);
+
+}
+
+.faq span{
+    color: var( --color-brown);
+    transition: trasnform 0.5s ease-in;
+}
+
+.faq.active .resposta{
+    max-height: 300px;
+
+}
+
+.faq.active span{
+    transform: rotate(180deg);
+
+}
+
+
+.pergunta p{
+    color: var(--color-brown);
+    font-display: var(--font-display);
+    font-size: 20px;
+
 }
