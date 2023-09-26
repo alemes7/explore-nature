@@ -30,3 +30,18 @@
     border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
+
+.toggle{
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 130px;
+    letter-spacing: 1.6px;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: Poppins;
+}
