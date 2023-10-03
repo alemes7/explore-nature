@@ -56,6 +56,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .menu{
+        height: 70px;
+    }
+
     .js-list{
         display: none;
         animation: fadeOut .3s forwards;
@@ -63,13 +67,15 @@
 
     .toggle{
         display: flex;
+        height: 50px;
+        margin-top: 10px;
     }
 
 
     .js-list.active{
         display: block;
         position: absolute;
-        top: 74px;
+        top: 90px;
         left: 0;
         width: 100%;
         background-color: var(--background-green);

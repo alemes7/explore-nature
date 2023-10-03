@@ -7,7 +7,7 @@ export default function menuMobileInit() {
             menuList.classList.toggle('active');
             const toggleIcon = toggle.querySelector('span');
             toggleIcon.classList.toggle('active');
-            toggleIcon.innerText = toggleIcon.innerText === 'menu' ? 'close' : 'menu';
+            toggleIcon.innerText = toggleIcon.innerText === 'Menu' ? 'close' : 'Menu';
         }
 
         toggle.addEventListener('click', toggleMenu);

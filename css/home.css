@@ -60,3 +60,37 @@ img{
 .js-conteudo section.active{
     display: block;
 }
+
+@media screen and (max-width: 768px){
+    .natureza-section{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 380px;
+    }
+
+    .home-lista{
+        width: 100%;
+        height: 300px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        position: relative;
+        display: flex;
+    }
+
+    .home-lista::-webkit-scrollbar{
+        background-color: #d8d8d8;
+        height: 10px;
+    }
+
+    .home-lista::-webkit-scrollbar-thumb{
+        background-color: #75d2a8;
+        border-radius: 7px;
+    }
+    img{
+        width: 380px;
+        height: 300px;
+        align-items: center;
+    }
+
+}
