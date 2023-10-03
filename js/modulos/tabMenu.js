@@ -1,4 +1,4 @@
-export default function initHome() {
+export default function tabMenuInit() {
 
     const imagens = document.querySelectorAll('.js-imagens li');
     const textos = document.querySelectorAll('.js-conteudo section');

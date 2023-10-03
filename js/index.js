@@ -1,8 +1,7 @@
-import homeInit from './modulos/home.js';
-import faqInit from './modulos/faq.js';
-import menuInit from './modulos/menu.js';
+import accordionInit from "./modulos/accordion.js";
+import tabMenuInit from "./modulos/tabMenu.js";
+import menuMobileInit from "./modulos/menuMobile.js";
 
-
-homeInit();
-faqInit();
-menuInit();
+tabMenuInit()
+accordionInit()
+menuMobileInit()

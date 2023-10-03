@@ -1,4 +1,4 @@
-export default function initFaq() {
+export default function accordionInit() {
     const faqs = document.querySelectorAll(".faq");
 
     faqs.forEach(faq => {
