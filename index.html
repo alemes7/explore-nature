@@ -1,42 +1,59 @@
+<!-- O código abaixo define o tipo de documento como HTML5. -->
 <!DOCTYPE html>
+
+<!-- Este é o início do elemento HTML. Ele contém todo o conteúdo da página. -->
 <html lang="pt-br">
 
+<!-- O elemento head contém informações sobre o documento, como o título, metadados e links para arquivos externos. -->
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais. -->
     <meta charset="UTF-8">
+    <!-- Define a largura da tela para o dispositivo. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página. -->
     <title>Explore a Natureza</title>
+    <!-- Define o ícone da página. -->
     <link rel="shortcut icon" href="./img/favicon/acacia.png" type="image/x-icon">
+    <!-- Define o arquivo CSS para estilizar a página. -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- Material Sybols  -->
+    <!-- Define o arquivo de fonte do Google Fonts para usar ícones do Material Design. -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
+<!-- O elemento body contém todo o conteúdo visível da página. -->
 <body>
+    <!-- Define a barra de navegação da página. -->
     <nav class="menu">
+        <!-- Define o botão de menu para dispositivos móveis. -->
         <div class="toggle">
             MENU
             <span class="material-symbols-outlined">Menu</span>
         </div>
+        <!-- Define a lista de links da barra de navegação. -->
         <ul class="menu-list js-list">
+            <!-- Define o link para a seção de natureza. -->
             <li class="menu-link">
                 <a href="#">
                     <span class="material-symbols-outlined">water_drop</span>
                     NATUREZA
                 </a>
             </li>
+            <!-- Define o link para a seção de perguntas frequentes. -->
             <li class="menu-link">
                 <a href="#">
                     <span class="material-symbols-outlined">Quiz</span>
                     FAQ
                 </a>
             </li>
+            <!-- Define o link para a seção de contato. -->
             <li class="menu-link">
                 <a href="#">
                     <span class="material-symbols-outlined">contact_support</span>
                     CONTATO
                 </a>
             </li>
+            <!-- Define o link para a seção de login. -->
             <li class="menu-link">
                 <a href="#">
                     <span class="material-symbols-outlined">account_circle</span>
@@ -45,33 +62,45 @@
             </li>
         </ul>
     </nav>
+    <!-- Define o título principal da página. -->
     <h1 class="title">EXPLORE A NATUREZA!🌲</h1>
+    <!-- Define a seção de imagens da natureza. -->
     <section class="container natureza-section js-imagens">
+        <!-- Define a lista de imagens da seção de natureza. -->
         <ul class="home-lista js-imagens">
+            <!-- Define o ícone do mouse para dispositivos móveis. -->
             <span class="material-symbols-outlined mouse">
                 mouse
             </span>
+            <!-- Define a imagem da natureza. -->
             <li class="natureza-img">
                 <img src="./img/natureza.jpg" alt="Natureza">
             </li>
+            <!-- Define a imagem de praias. -->
             <li class="natureza-img">
                 <img src="./img/praias.jpg" alt="Natureza">
             </li>
+            <!-- Define a imagem de montanhas. -->
             <li class="natureza-img">
                 <img src="./img/montanhas.jpg" alt="Natureza">
             </li>
+            <!-- Define a imagem de florestas. -->
             <li class="natureza-img">
                 <img src="./img/Florestas.jpg" alt="Natureza">
             </li>
         </ul>
+        <!-- Define o conteúdo da seção de natureza. -->
         <div class="natureza-texto js-conteudo">
+            <!-- Define a seção de conteúdo da natureza. -->
             <section class="natureza-content active">
+                <!-- Define o ícone de eco para a seção de natureza. -->
                 <h2>
                     <span class="material-symbols-outlined">
                         eco
                     </span>
                     NATUREZA:
                 </h2>
+                <!-- Define o texto da seção de natureza. -->
                 <p>Explorar a natureza é uma atividade incrível que pode proporcionar uma série de benefícios físicos e
                     mentais. Ao estar em contato com a natureza, é possível reduzir o estresse, aumentar a criatividade
                     e melhorar o bem-estar geral.</p>
@@ -84,13 +113,16 @@
                     habitam. Dessa forma, podemos desfrutar de todos os benefícios que a natureza tem a oferecer
                     enquanto também ajudamos a proteger esse ambiente valioso para as gerações futuras.</p>
             </section>
+            <!-- Define a seção de conteúdo de praias. -->
             <section class="natureza-content">
+                <!-- Define o ícone de kitesurfing para a seção de praias. -->
                 <h2>
                     <span class="material-symbols-outlined">
                         kitesurfing
                     </span>
                     PRAIAS:
                 </h2>
+                <!-- Define o texto da seção de praias. -->
                 <p>As praias são um exemplo maravilhoso da natureza que podem ser exploradas de muitas
                     maneiras. Elas são consideradas por muitos como um refúgio para relaxar, praticar atividades
                     físicas, contemplar a beleza natural e socializar. As praias oferecem uma vasta gama de
@@ -106,6 +138,7 @@
                     podemos desfrutar de toda a beleza natural e dos benefícios que elas oferecem enquanto
                     também ajudamos a proteger esse ambiente para as gerações futuras.</p>
             </section>
+            <!-- Define a seção de conteúdo de montanhas. -->
             <section class="natureza-content">
                 <h2>
                     <span class="material-symbols-outlined">
@@ -124,6 +157,7 @@
                     locais. Além disso, é importante estar preparado para as condições climáticas e sempre seguir
                     as normas de segurança.</p>
             </section>
+            <!-- Define a seção de conteúdo de florestas. -->
             <section class="natureza-content">
                 <h2>
                     <span class="material-symbols-outlined">
