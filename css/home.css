@@ -96,7 +96,7 @@ img{
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 768px){
     .home-lista{
         width: 100%;
         height: 300px;

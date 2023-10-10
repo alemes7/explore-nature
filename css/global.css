@@ -68,7 +68,7 @@ img{
 
 @media screen and (max-width: 380px) {
     .title{
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     .titleFaq{
         font-size: 1.2rem;
