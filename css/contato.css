@@ -1,5 +1,5 @@
 .contato{
-    margin-left: 160px;
+    margin-left: 100px;
 }
 
 #contato-maintittle{
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1290px) {
     .contato{
-        margin-left: 40px;
+        margin-left: 10px;
     }
 
     .contato-list{
