@@ -50,18 +50,28 @@ img{
     .title{
         font-size: 2.5rem;
     }
+    .titleFaq{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 415px) {
     .title{
-        font-size: 1.6rem;
-        
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .titleFaq{
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 380px) {
     .title{
         font-size: 1.4rem;
+    }
+    .titleFaq{
+        font-size: 1.2rem;
     }
 }
 
