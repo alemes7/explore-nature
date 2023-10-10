@@ -1,3 +1,3 @@
-export default function initModal() {
+export default function initModal(){
     
-    }
+}
