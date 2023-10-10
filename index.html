@@ -1,46 +1,40 @@
 <!-- O código abaixo define o tipo de documento como HTML5. -->
 <!DOCTYPE html>
-
-<!-- Este é o início do elemento HTML. Ele contém todo o conteúdo da página. -->
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Este é o início do elemento HTML. Ele contém todo o conteúdo da página. -->
 
 <!-- O elemento head contém informações sobre o documento, como o título, metadados e links para arquivos externos. -->
 <head>
-    <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais. -->
     <meta charset="UTF-8">
-    <!-- Define a largura da tela para o dispositivo. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Define o título da página. -->
-    <title>Explore a Natureza</title>
-    <!-- Define o ícone da página. -->
-    <link rel="shortcut icon" href="./img/favicon/acacia.png" type="image/x-icon">
-    <!-- Define o arquivo CSS para estilizar a página. -->
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da tela para o dispositivo. -->
+    <title>Explore a Natureza</title> <!-- Define o título da página. -->
+    <link rel="shortcut icon" href="./img/favicon/acacia.png" type="image/x-icon"> <!-- Define o ícone da página. -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Define o arquivo CSS para estilizar a página. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
     <!-- Define o arquivo de fonte do Google Fonts para usar ícones do Material Design. -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
-<!-- O elemento body contém todo o conteúdo visível da página. -->
-<body>
-    <!-- Define a barra de navegação da página. -->
-    <nav class="menu">
-        <!-- Define o botão de menu para dispositivos móveis. -->
-        <div class="toggle">
+<body> <!-- O elemento body contém todo o conteúdo visível da página. -->
+    <form action="form">
+        <label for="" class="">Email:</label>
+        <input class="form-control" type="email" name="" id=""
+        placeholder="Digite seu email">
+        <label for="">Senha:</label>
+        <input class="form-control" type="password" name="" id=""
+        name="senha" id="" placeholder="Digite sua senha">
+        <input class="btn btn-primary" type="submit" value="Entrar">
+    </form>
+    <nav class="menu"> <!-- Define a barra de navegação da página. -->
+        <div class="toggle"> <!-- Define o botão de menu para dispositivos móveis. -->
             MENU
             <span class="material-symbols-outlined">Menu</span>
         </div>
-        <!-- Define a lista de links da barra de navegação. -->
-        <ul class="menu-list js-list">
-            <!-- Define o link para a seção de natureza. -->
-            <li class="menu-link">
+        <ul class="menu-list js-list"> <!-- Define a lista de links da barra de navegação. -->
+            <li class="menu-link"> <!-- Define o link para a seção de natureza. -->
                 <a href="#">
                     <span class="material-symbols-outlined">water_drop</span>
                     NATUREZA
                 </a>
             </li>
-            <!-- Define o link para a seção de perguntas frequentes. -->
-            <li class="menu-link">
+            <li class="menu-link"> <!-- Define o link para a seção de perguntas frequentes. -->
                 <a href="#">
                     <span class="material-symbols-outlined">Quiz</span>
                     FAQ
@@ -182,7 +176,9 @@
         </div>
     </section>
     <section>
+        <!-- Define o titulo do FAQ como H1 -->
         <h1 class="title" id="faq">FAQ💬.......... </h1>
+        <!-- Define a seção de perguntas frequentes. -->
         <div class="faq-contanier">
             <div class="faq">
                 <div class="pergunta">
@@ -193,7 +189,6 @@
                         stat_minus_1
                     </span>
                 </div>
-
                 <div class="resposta">
                     <p>Explorar a natureza é importante por diversos motivos. Isso nos permite reconectar com o meio
                         ambiente, relaxar, reduzir o estresse,

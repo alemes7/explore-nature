@@ -6,6 +6,13 @@ tabMenuInit()
 accordionInit()
 menuMobileInit()
 
+const form = document.querySelector('.form')
+const dados = {}
+
+function pegarValorForm(event){
+    dados[event.target.name] = event.target.value
+    console.log(dados)
+}
 
 function mudarNomeBtn() {
     btn.innerText = 'Copiado'
