@@ -1,0 +1,51 @@
+.modal{
+    display: none;
+    padding: 20px;
+    align-items: center;
+    width: 600px;
+    max-width: 100%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-forms{
+    background-color: #f5faf6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    border: 10px double var(--background-green);
+    padding: 40px;
+}
+
+.modal-forms input{
+    border: 2px solid #6e6e6e;
+    padding: 10px;
+}
+
+.modal-close{
+    position: absolute;
+    top: -6px;
+    right: 0;
+    cursor: pointer;
+    background-color: tomato;
+    border-radius:20%;
+}
+
+.js-modal.active{
+    display: flex;
+    animation: showModal .3s forwards;
+}
+
+@keyframes showModal{
+    from{
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}

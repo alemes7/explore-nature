@@ -13,15 +13,6 @@
     <!-- Define o arquivo de fonte do Google Fonts para usar ícones do Material Design. -->
 </head>
 <body> <!-- O elemento body contém todo o conteúdo visível da página. -->
-    <form action="form">
-        <label for="" class="">Email:</label>
-        <input class="form-control" type="email" name="" id=""
-        placeholder="Digite seu email">
-        <label for="">Senha:</label>
-        <input class="form-control" type="password" name="" id=""
-        name="senha" id="" placeholder="Digite sua senha">
-        <input class="btn btn-primary" type="submit" value="Entrar">
-    </form>
     <nav class="menu"> <!-- Define a barra de navegação da página. -->
         <div class="toggle"> <!-- Define o botão de menu para dispositivos móveis. -->
             MENU
@@ -336,6 +327,18 @@
             ®Todos os direitos reservados
         </p>
     </footer>
+    <div class=" modal js-modal">
+        <span class="material-symbols-outlined modal-close">
+            close
+        </span>
+        <form class="modal-forms">
+            <h3>RECEBA NOTIFICAÇÕES:</h3>
+            <label for="">Email:</label>
+            <input name="email" type="email" placeholder="Insira seu email" required="">
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="msg"></div>
+    </div>
     <script type="module" src="./js/index.js"></script>
 </body>
 

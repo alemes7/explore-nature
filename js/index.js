@@ -1,18 +1,12 @@
 import accordionInit from "./modulos/accordion.js";
 import tabMenuInit from "./modulos/tabMenu.js";
 import menuMobileInit from "./modulos/menuMobile.js";
+import initModal from "./modulos/modal.js";
 
 tabMenuInit()
 accordionInit()
 menuMobileInit()
-
-const form = document.querySelector('.form')
-const dados = {}
-
-function pegarValorForm(event){
-    dados[event.target.name] = event.target.value
-    console.log(dados)
-}
+initModal()
 
 function mudarNomeBtn() {
     btn.innerText = 'Copiado'
