@@ -1,14 +1,16 @@
-.footer{
-    max-width: var(--width);
-    margin-left: auto;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    background-color: var(--background-green);
-    color: #fff;
+/* Estilos para elementos com a classe "footer" */
+.footer {
+    max-width: var(--width); /* Define a largura máxima usando uma variável personalizada chamada "--width" */
+    margin-left: auto; /* Define a margem esquerda como "auto" (centralizando horizontalmente) */
+    margin-top: 30px; /* Adiciona uma margem superior de 30px */
+    margin-right: 0px; /* Define a margem direita como 0px */
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px */
+    background-color: var(--background-green); /* Define a cor de fundo usando uma variável customizada chamada "--background-green" */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
 }
 
-.footer-text{
-    padding: 20px;
-    color: var(--color-white);
+/* Estilos para elementos com a classe "footer-text" dentro de elementos com a classe "footer" */
+.footer-text {
+    padding: 20px; /* Adiciona um preenchimento interno de 20px em todas as direções */
+    color: var(--color-white); /* Define a cor do texto usando uma variável customizada chamada "--color-white" */
 }
