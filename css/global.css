@@ -46,34 +46,6 @@ img{
     letter-spacing: 2px;
 }
 
-@media screen and (max-width: 768px) {
-    .title{
-        font-size: 2.5rem;
-    }
-    .titleFaq{
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 415px) {
-    .title{
-        font-size: 2rem;
-        align-items: center;
-        text-align: center;
-    }
-    .titleFaq{
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .title{
-        font-size: 2rem;
-    }
-    .titleFaq{
-        font-size: 1.2rem;
-    }
-}
 
 .container{
     max-width: 1200px;

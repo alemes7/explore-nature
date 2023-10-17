@@ -1,3 +1,4 @@
+
 .modal{
     display: none;
     padding: 20px;
@@ -38,6 +39,7 @@
     display: flex;
     animation: showModal .3s forwards;
 }
+
 
 @keyframes showModal{
     from{
