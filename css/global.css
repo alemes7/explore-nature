@@ -46,9 +46,48 @@ img{
     letter-spacing: 2px;
 }
 
+.title-faq{
+    font-size: 4rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color: var(--color-title);
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+}
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 2.5rem;
+    }
+    .title-faq{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .title{
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .title-faq{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .title{
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
 }
