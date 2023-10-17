@@ -1,162 +1,191 @@
-.natureza-section{
-    display: flex;
-    gap: 20px;
+/* Estilos para a seção "natureza-section" */
+.natureza-section {
+    display: flex; /* Exibe os elementos em um flex container */
+    gap: 20px; /* Adiciona espaçamento entre os elementos filho */
 }
 
-.natureza-texto h2{
-    color: #814813;
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-family: var(--font-display);
+/* Estilos para os títulos dentro de "natureza-texto" */
+.natureza-texto h2 {
+    color: #814813; /* Define a cor do texto do título */
+    font-size: 40px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-family: var(--font-display); /* Define a fonte usando a variável "--font-display" */
 }
 
-.natureza-texto p{
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    max-width: 900px;
+/* Estilos para parágrafos dentro de "natureza-texto" */
+.natureza-texto p {
+    font-size: 18px; /* Define o tamanho da fonte do texto */
+    line-height: 32px; /* Define a altura da linha para melhor legibilidade */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    max-width: 900px; /* Define a largura máxima para evitar que o texto se estenda demais */
 }
 
-.natureza-img{
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 400px;
-}
-.home-lista{
-    height: 50vh;
-    width: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden; /* hidden vai esconder o scroll para a horizontal */
-    position: relative;
+/* Estilos para a imagem dentro de "natureza-img" */
+.natureza-img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
+    height: 100%; /* Define a altura da imagem como 100% do contêiner pai */
+    max-width: 600px; /* Define a largura máxima para evitar que a imagem fique muito grande */
+    max-height: 400px; /* Define a altura máxima para evitar que a imagem fique muito alta */
 }
 
-.mouse{
-    position: absolute;
-    right: 0;
-    background-color: #75d2a8;
-    color: #fff;
+/* Estilos para a lista na seção "home-lista" */
+.home-lista {
+    height: 50vh; /* Define a altura da lista como metade da altura da janela de visualização */
+    width: 300px; /* Define a largura da lista */
+    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+    position: relative; /* Define a posição relativa para alinhar o elemento "mouse" */
 }
 
-.home-lista::-webkit-scrollbar{
-    background-color: #d8d8d8;
-    width: 10px;
+/* Estilos para o elemento "mouse" dentro de "home-lista" */
+.mouse {
+    position: absolute; /* Define a posição absoluta para o elemento "mouse" */
+    right: 0; /* Alinha o elemento à direita do contêiner pai */
+    background-color: #75d2a8; /* Define a cor de fundo do elemento "mouse" */
+    color: #fff; /* Define a cor do texto dentro do elemento "mouse" */
 }
 
-.home-lista::-webkit-scrollbar-thumb{
-    background-color: #75d2a8;
-    border-radius: 7px;
+/* Estilos para a barra de rolagem personalizada (WebKit) dentro de "home-lista" */
+.home-lista::-webkit-scrollbar {
+    background-color: #d8d8d8; /* Define a cor de fundo da barra de rolagem */
+    width: 10px; /* Define a largura da barra de rolagem */
 }
 
-img{
-    width: 300px;
-    height: 53vh;
+/* Estilos para o polegar (thumb) da barra de rolagem personalizada (WebKit) */
+.home-lista::-webkit-scrollbar-thumb {
+    background-color: #75d2a8; /* Define a cor do polegar da barra de rolagem */
+    border-radius: 7px; /* Adiciona bordas arredondadas ao polegar */
 }
 
-.js-conteudo section{
-    display: none;
+/* Estilos para todas as imagens na página */
+img {
+    width: 300px; /* Define a largura da imagem */
+    height: 53vh; /* Define a altura da imagem como metade da altura da janela de visualização */
 }
 
-.js-conteudo section.active{
-    display: block;
+/* Estilos para seções dentro de "js-conteudo" que não estão ativas */
+.js-conteudo section {
+    display: none; /* Oculta as seções que não estão ativas */
 }
 
-@media screen and (max-width: 904px){
-    .natureza-section{
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 380px;
-    }
-    
-    .home-lista{
-        width: 100%;
-        height: 300px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        position: relative;
-        display: flex;
-    }
-
-    .home-lista::-webkit-scrollbar{
-        background-color: #d8d8d8;
-        height: 10px;
-    }
-
-    .home-lista::-webkit-scrollbar-thumb{
-        background-color: #75d2a8;
-        border-radius: 7px;
-    }
-
-    img{
-        width: 380px;
-        height: 300px;
-        align-items: center;
-    }
-
+/* Estilos para seções dentro de "js-conteudo" que estão ativas */
+.js-conteudo section.active {
+    display: block; /* Exibe as seções que estão ativas */
 }
 
-@media screen and (max-width: 768px){
-    .home-lista{
-        width: 100%;
-        height: 300px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        position: relative;
-        display: flex; 
+/* Estilos responsivos para telas menores (max-width: 904px) */
+@media screen and (max-width: 904px) {
+    /* Modificações nos estilos da seção "natureza-section" */
+    .natureza-section {
+        flex-direction: column; /* Altera a direção para coluna em telas menores */
+        align-items: center; /* Centraliza verticalmente os elementos */
+        height: 100%; /* Define a altura como 100% para preencher a tela */
+        width: 380px; /* Define a largura máxima */
     }
 
-    .home-lista::-webkit-scrollbar{
-        background-color: #d8d8d8;
-        height: 10px;
+    /* Modificações nos estilos da seção "home-lista" */
+    .home-lista {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: 300px; /* Define uma altura fixa */
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        overflow-x: scroll; /* Exibe a barra de rolagem horizontal */
+        position: relative; /* Mantém a posição relativa */
+        display: flex; /* Exibe os elementos como flex */
     }
 
-    .home-lista::-webkit-scrollbar-thumb{
-        background-color: #75d2a8;
-        border-radius: 7px;
-    }
-    img{
-        width: 380px;
-        height: 300px;
-        align-items: center;
+    /* Estilos para a barra de rolagem personalizada (WebKit) na tela menor */
+    .home-lista::-webkit-scrollbar {
+        background-color: #d8d8d8; /* Define a cor de fundo da barra de rolagem */
+        height: 10px; /* Define a altura da barra de rolagem */
     }
 
+    /* Estilos para o polegar (thumb) da barra de rolagem personalizada (WebKit) na tela menor */
+    .home-lista::-webkit-scrollbar-thumb {
+        background-color: #75d2a8; /* Define a cor do polegar da barra de rolagem */
+        border-radius: 7px; /* Adiciona bordas arredondadas ao polegar */
+    }
+
+    /* Modificações nos estilos das imagens para telas menores */
+    img {
+        width: 380px; /* Largura aumentada para melhor ajuste em telas menores */
+        height: 300px; /* Altura fixa */
+        align-items: center; /* Centraliza verticalmente as imagens */
+    }
 }
 
-@media screen and (max-width: 320px){
-    .natureza-section{
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 300px;
+/* Estilos responsivos para telas menores (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Modificações nos estilos da seção "home-lista" */
+    .home-lista {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: 300px; /* Define uma altura fixa */
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        overflow-x: scroll; /* Exibe a barra de rolagem horizontal */
+        position: relative; /* Mantém a posição relativa */
+        display: flex; /* Exibe os elementos como flex */
     }
 
-    .natureza-texto{
-        font-size: 25px;
+    /* Estilos para a barra de rolagem personalizada (WebKit) na tela menor */
+    .home-lista::-webkit-scrollbar {
+        background-color: #d8d8d8; /* Define a cor de fundo da barra de rolagem */
+        height: 10px; /* Define a altura da barra de rolagem */
     }
 
-    .home-lista{
-        width: 100%;
-        height: 200px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        position: relative;
-        display: flex; 
+    /* Estilos para o polegar (thumb) da barra de rolagem personalizada (WebKit) na tela menor */
+    .home-lista::-webkit-scrollbar-thumb {
+        background-color: #75d2a8; /* Define a cor do polegar da barra de rolagem */
+        border-radius: 7px; /* Adiciona bordas arredondadas ao polegar */
     }
 
-    .home-lista::-webkit-scrollbar{
-        background-color: #d8d8d8;
-        height: 10px;
+    /* Modificações nos estilos das imagens para telas menores */
+    img {
+        width: 380px; /* Largura aumentada para melhor ajuste em telas menores */
+        height: 300px; /* Altura fixa */
+        align-items: center; /* Centraliza verticalmente as imagens */
+    }
+}
+
+/* Estilos responsivos para telas muito pequenas (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    /* Modificações nos estilos da seção "natureza-section" */
+    .natureza-section {
+        flex-direction: column; /* Altera a direção para coluna em telas muito pequenas */
+        align-items: center; /* Centraliza verticalmente os elementos */
+        height: 100%; /* Define a altura como 100% para preencher a tela */
+        width: 300px; /* Define a largura máxima */
     }
 
-    .home-lista::-webkit-scrollbar-thumb{
-        background-color: #75d2a8;
-        border-radius: 7px;
-    }
-    img{
-        width: 200px;
-        height: 200px;
-        align-items: center;
+    /* Modificações nos estilos da fonte de texto "natureza-texto" para telas muito pequenas */
+    .natureza-texto {
+        font-size: 25px; /* Define um tamanho de fonte menor */
     }
 
+    /* Modificações nos estilos da seção "home-lista" para telas muito pequenas */
+    .home-lista {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: 200px; /* Define uma altura fixa */
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        overflow-x: scroll; /* Exibe a barra de rolagem horizontal */
+        position: relative; /* Mantém a posição relativa */
+        display: flex; /* Exibe os elementos como flex */
+    }
+
+    /* Estilos para a barra de rolagem personalizada (WebKit) em telas muito pequenas */
+    .home-lista::-webkit-scrollbar {
+        background-color: #d8d8d8; /* Define a cor de fundo da barra de rolagem */
+        height: 10px; /* Define a altura da barra de rolagem */
+    }
+
+    /* Estilos para o polegar (thumb) da barra de rolagem personalizada (WebKit) em telas muito pequenas */
+    .home-lista::-webkit-scrollbar-thumb {
+        background-color: #75d2a8; /* Define a cor do polegar da barra de rolagem */
+        border-radius: 7px; /* Adiciona bordas arredondadas ao polegar */
+    }
+
+    /* Modificações nos estilos das imagens para telas muito pequenas */
+    img {
+        width: 200px; /* Largura reduzida para melhor ajuste em telas muito pequenas */
+        height: 200px; /* Altura reduzida para telas muito pequenas */
+        align-items: center; /* Centraliza verticalmente as imagens */
+    }
 }
