@@ -1,48 +1,46 @@
-.pergunta{
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: solid 1px #D8D8D8;
-    transition: all 0.5s ease-in-out;
+/* Estilos para elementos com a classe "pergunta" */
+.pergunta {
+    margin-bottom: 10px; /* Adiciona margem inferior de 10px */
+    display: flex; /* Usa um layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
+    border-bottom: solid 1px #D8D8D8; /* Adiciona uma borda inferior sólida com a cor #D8D8D8 */
+    transition: all 0.5s ease-in-out; /* Aplica uma transição suave a todas as propriedades CSS com duração de 0.5 segundos */
 }
 
-
-
-.resposta{
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    max-height: 0;
+/* Estilos para elementos com a classe "resposta" */
+.resposta {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o tamanho do contêiner */
+    transition: max-height 0.5s ease; /* Aplica uma transição suave à propriedade "max-height" com duração de 0.5 segundos */
+    max-height: 0; /* Define a altura máxima como 0, escondendo inicialmente o conteúdo */
 }
 
-
-.faq{
-    max-width: 1200px;
-    margin-top: 2rem;
-    margin-left:11.5%;
-    cursor: pointer;
-    font-display: var(--font-display);
-
+/* Estilos para elementos com a classe "faq" */
+.faq {
+    max-width: 1200px; /* Define a largura máxima do elemento como 1200px */
+    margin-top: 2rem; /* Adiciona uma margem superior de 2 unidades "rem" */
+    margin-left: 11.5%; /* Adiciona margem esquerda de 11.5% */
+    cursor: pointer; /* Define o cursor como um ícone de ponteiro ao passar por cima (indicando interatividade) */
+    font-display: var(--font-display); /* Define o valor da propriedade "font-display" com uma variável customizada */
 }
 
-.faq span{
-    color: var( --color-brown);
-    transition: trasnform 0.5s ease-in;
+/* Estilos para elementos "span" dentro de elementos com a classe "faq" */
+.faq span {
+    color: var(--color-brown); /* Define a cor de texto usando uma variável customizada */
+    transition: transform 0.5s ease-in; /* Aplica uma transição suave à propriedade "transform" com duração de 0.5 segundos */
 }
 
-.faq.active .resposta{
-    max-height: 300px;
-
+/* Estilos para elementos com a classe "faq" que também têm a classe "active" */
+.faq.active .resposta {
+    max-height: 300px; /* Quando a classe "active" está presente, a altura máxima da resposta é definida como 300px, revelando o conteúdo */
 }
 
-.faq.active span{
-    transform: rotate(180deg);
-
+.faq.active span {
+    transform: rotate(180deg); /* Quando a classe "active" está presente, gira o ícone em 180 graus */
 }
 
-
-.pergunta p{
-    color: var(--color-brown);
-    font-display: var(--font-display);
-    font-size: 20px;
-
+/* Estilos para elementos "p" dentro de elementos com a classe "pergunta" */
+.pergunta p {
+    color: var(--color-brown); /* Define a cor de texto usando uma variável customizada */
+    font-display: var(--font-display); /* Define o valor da propriedade "font-display" com uma variável customizada */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
 }
