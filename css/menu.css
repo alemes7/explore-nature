@@ -1,102 +1,107 @@
-.menu{
-    max-width: var(--width);
-    margin-left: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: var(--background-green);
-    color: #fff;
-    display: flex;
+/* Estilos para a classe "menu" */
+.menu {
+    max-width: var(--width); /* Define a largura máxima usando uma variável personalizada */
+    margin-left: auto; /* Alinha o menu à direita do contêiner pai */
+    margin-top: 30px; /* Adiciona margem superior */
+    margin-bottom: 30px; /* Adiciona margem inferior */
+    background-color: var(--background-green); /* Define a cor de fundo usando uma variável */
+    color: #fff; /* Define a cor do texto como branco */
+    display: flex; /* Exibe os itens do menu em uma linha flexível */
 }
 
-.menu-list{
-    display: flex;
-    padding: 10px;
-    flex-wrap: wrap;
+/* Estilos para a classe "menu-list" */
+.menu-list {
+    display: flex; /* Exibe os itens de menu em uma linha flexível */
+    padding: 10px; /* Adiciona preenchimento interno */
+    flex-wrap: wrap; /* Permite que os itens de menu quebrem para a próxima linha em telas menores */
 }
 
-.menu-link a{
-    color: var(--color-white);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 1.6px;
-    padding: 15px;
-    display: inline-flex;
+/* Estilos para links dentro da classe "menu-link" */
+.menu-link a {
+    color: var(--color-white); /* Define a cor do texto dos links usando uma variável */
+    font-family: Poppins; /* Define a fonte para os links */
+    font-size: 14px; /* Define o tamanho da fonte */
+    font-style: normal; /* Define o estilo da fonte como normal */
+    font-weight: 700; /* Define o peso da fonte como 700 (negrito) */
+    letter-spacing: 1.6px; /* Adiciona espaçamento entre letras */
+    padding: 15px; /* Adiciona preenchimento interno aos links */
+    display: inline-flex; /* Exibe os links como um contêiner flexível em linha */
 }
 
-.menu-link a:hover{
-    color: #814813;;
-    background-color: #fff;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
+/* Estilos para links dentro da classe "menu-link" quando o mouse está sobre eles */
+.menu-link a:hover {
+    color: #814813; /* Muda a cor do texto quando o mouse está sobre o link */
+    background-color: #fff; /* Altera a cor de fundo ao passar o mouse sobre o link */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao link */
+    transition: 0.3s ease-in-out; /* Adiciona uma transição suave */
 }
 
+/* Estilos para o botão de alternância de menu (hamburguer) com a classe "toggle" */
 .toggle {
-    align-items: center;
-    gap: 0.5rem;
-    background-color: black;
-    padding: 0.625rem;
-    border-radius: 5px;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
-    display: none;
-    margin-left: 10px;
+    align-items: center; /* Alinha os itens do menu centralmente */
+    gap: 0.5rem; /* Adiciona espaço entre os itens */
+    background-color: black; /* Define a cor de fundo do botão de alternância */
+    padding: 0.625rem; /* Adiciona preenchimento interno ao botão de alternância */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão de alternância */
+    letter-spacing: 0.1rem; /* Adiciona espaçamento entre letras */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    display: none; /* Inicialmente, oculta o botão de alternância */
+    margin-left: 10px; /* Adiciona margem à esquerda */
 }
 
+/* Estilos para o botão de alternância de menu (hamburguer) com a classe "toggle" quando a tela é menor (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .toggle {
-        display: flex;
+        display: flex; /* Exibe o botão de alternância em telas menores */
     }
 
-		.js-list{
-        display: none;
+    .js-list {
+        display: none; /* Oculta a lista de itens de menu em telas menores */
     }
 }
 
+/* Estilos para itens de menu dentro de uma lista com a classe "js-list" em telas menores (max-width: 768px) */
 @media screen and (max-width: 768px) {
-
-    .menu{
-        height: 70px;
+    .menu {
+        height: 70px; /* Define a altura do menu em telas menores */
     }
 
-    .js-list{
-        display: none;
-        animation: fadeOut .3s forwards;
+    .js-list {
+        display: none; /* Oculta a lista de itens de menu */
+        animation: fadeOut .3s forwards; /* Adiciona uma animação de desaparecimento */
     }
 
-    .toggle{
-        display: flex;
-        height: 50px;
-        margin-top: 10px;
+    .toggle {
+        display: flex; /* Exibe o botão de alternância em telas menores */
+        height: 50px; /* Define a altura do botão de alternância */
+        margin-top: 10px; /* Adiciona margem superior */
     }
 
-
-    .js-list.active{
-        display: block;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        background-color: var(--background-green);
-        z-index: 100;
-        animation: slideDownMenu .5s forwards;
+    .js-list.active {
+        display: block; /* Exibe a lista de itens de menu ativa */
+        position: absolute; /* Define a posição absoluta para a lista de itens de menu */
+        top: 90px; /* Define a posição superior da lista de itens de menu */
+        left: 0; /* Alinha a lista à esquerda do contêiner pai */
+        width: 100%; /* Ocupa toda a largura disponível */
+        background-color: var(--background-green); /* Define a cor de fundo usando uma variável */
+        z-index: 100; /* Define a ordem de empilhamento (z-index) para sobrepor outros elementos */
+        animation: slideDownMenu .5s forwards; /* Adiciona uma animação para expandir a lista de itens de menu */
     }
 
-    .toggle span.active{
-        animation: slideDownMenu .5s forwards;
+    .toggle span.active {
+        animation: slideDownMenu .5s forwards; /* Adiciona uma animação para o ícone de alternância do menu */
     }
-
 }
 
+/* Animação para deslizar para baixo o menu */
 @keyframes slideDownMenu {
     from {
-        opacity: 0;
-        transform: translateX(-10px);
+        opacity: 0; /* Começa com opacidade zero */
+        transform: translateX(-10px); /* Começa 10 pixels à esquerda */
     }
 
     to {
-        opacity: 1;
-        transform: translateX(0);
+        opacity: 1; /* Termina com opacidade total */
+        transform: translateX(0); /* Sem deslocamento horizontal */
     }
 }
