@@ -1,53 +1,57 @@
-
-.modal{
-    display: none;
-    padding: 20px;
-    align-items: center;
-    width: 600px;
-    max-width: 100%;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
+/* Estilos para a classe "modal" que define a caixa de diálogo modal */
+.modal {
+    display: none; /* Inicialmente, oculta a caixa de diálogo modal */
+    padding: 20px; /* Adiciona preenchimento interno */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    width: 600px; /* Define uma largura fixa para a caixa de diálogo modal */
+    max-width: 100%; /* Garante que a largura máxima não exceda a largura da janela */
+    position: fixed; /* Define uma posição fixa em relação à janela de visualização */
+    top: 30%; /* Define a posição superior da caixa de diálogo modal */
+    left: 50%; /* Define a posição à esquerda da caixa de diálogo modal */
+    transform: translateX(-50%); /* Centraliza horizontalmente a caixa de diálogo modal */
 }
 
-.modal-forms{
-    background-color: #f5faf6;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    border: 10px double var(--background-green);
-    padding: 40px;
+/* Estilos para a classe "modal-forms" que envolve os formulários dentro da caixa de diálogo modal */
+.modal-forms {
+    background-color: #f5faf6; /* Define a cor de fundo do formulário */
+    display: flex; /* Exibe os formulários em uma linha flexível */
+    flex-direction: column; /* Organiza os formulários em coluna */
+    gap: 10px; /* Adiciona espaço entre os formulários */
+    flex: 1; /* Ocupa todo o espaço disponível na caixa de diálogo modal */
+    border: 10px double var(--background-green); /* Adiciona uma borda dupla com uma cor personalizada */
+    padding: 40px; /* Adiciona preenchimento interno aos formulários */
 }
 
-.modal-forms input{
-    border: 2px solid #6e6e6e;
-    padding: 10px;
+/* Estilos para os campos de input dentro da classe "modal-forms" */
+.modal-forms input {
+    border: 2px solid #6e6e6e; /* Define uma borda sólida com uma cor específica */
+    padding: 10px; /* Adiciona preenchimento interno aos campos de input */
 }
 
-.modal-close{
-    position: absolute;
-    top: -6px;
-    right: 0;
-    cursor: pointer;
-    background-color: tomato;
-    border-radius:20%;
+/* Estilos para o botão de fechar a caixa de diálogo modal */
+.modal-close {
+    position: absolute; /* Define uma posição absoluta para o botão de fechar */
+    top: -6px; /* Define uma posição superior para alinhar o botão com a borda superior */
+    right: 0; /* Define uma posição à direita */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    background-color: tomato; /* Define a cor de fundo do botão de fechar */
+    border-radius: 20%; /* Adiciona bordas arredondadas ao botão */
 }
 
-.js-modal.active{
-    display: flex;
-    animation: showModal .3s forwards;
+/* Estilos para a classe "js-modal" quando a caixa de diálogo modal está ativa (classe "active") */
+.js-modal.active {
+    display: flex; /* Exibe a caixa de diálogo modal quando a classe "active" está presente */
+    animation: showModal .3s forwards; /* Aplica uma animação para mostrar a caixa de diálogo modal */
 }
 
-
-@keyframes showModal{
-    from{
-        transform: translate(-50%, -50%) scale(0);
+/* Animação para mostrar a caixa de diálogo modal */
+@keyframes showModal {
+    from {
+        transform: translate(-50%, -50%) scale(0); /* Começa com escala zero e opacidade zero */
         opacity: 0;
     }
     to {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1); /* Termina com escala total e opacidade máxima */
         opacity: 1;
     }
 }
