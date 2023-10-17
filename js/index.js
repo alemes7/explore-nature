@@ -7,15 +7,3 @@ tabMenuInit()
 accordionInit()
 menuMobileInit()
 initModal()
-
-function mudarNomeBtn() {
-    btn.innerText = 'Copiado'
-    setTimeout(() => {
-        btn.innerText = 'Copiar'
-    }, 3000)
-}
-// esse é um evento que acontece em milisegundos, ou seja, 3 segundos
-
-localStorage.setItem('nome', 'Rafael')
-const nome = localStorage.getItem('nome')
-console.log(nome)
