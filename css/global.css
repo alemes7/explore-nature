@@ -1,93 +1,98 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+/* Estilos aplicados a todos os elementos HTML */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    border: 0; /* Remove bordas padrão */
+    outline: 0; /* Remove contornos padrão */
+    box-sizing: border-box; /* Define a caixa de modelagem como "border-box" para incluir bordas e preenchimentos nas dimensões */
+    list-style: none; /* Remove estilos de lista (pontos, números) */
+    text-decoration: none; /* Remove decoração de texto (sublinhado) */
 }
 
-:root{
-    --color-white: #fff;
-    --background: #eef8f5;
-    --background-green: #2fa97c;
-    --color-title: #565756;
-    --color-border: #f4e2e2;
-    --background-scroll:#75d2a8;
-    --color-border-scroll:#d8d8d8;
-    --color-text: #626262;
-    --color-brown: #814813;
-    --color-border-faq:#d8d8d8;
-    --font-display: 'Playfair Display SC', serif;
-    --font-primary: 'Poppins', sans-serif;
-    --width: 1200px;
-
+/* Definição de variáveis personalizadas */
+:root {
+    --color-white: #fff; /* Cor branca */
+    --background: #eef8f5; /* Cor de fundo padrão */
+    --background-green: #2fa97c; /* Cor de fundo verde */
+    --color-title: #565756; /* Cor do título */
+    --color-border: #f4e2e2; /* Cor da borda */
+    --background-scroll: #75d2a8; /* Cor de fundo de rolagem */
+    --color-border-scroll: #d8d8d8; /* Cor da borda de rolagem */
+    --color-text: #626262; /* Cor do texto */
+    --color-brown: #814813; /* Cor marrom */
+    --color-border-faq: #d8d8d8; /* Cor da borda das FAQs */
+    --font-display: 'Playfair Display SC', serif; /* Fonte principal */
+    --font-primary: 'Poppins', sans-serif; /* Outra fonte */
+    --width: 1200px; /* Largura máxima */
 }
 
-body{
-    background-color: var(--background);
-    font-family: var(--font-primary);
-    color: var(--color-text);
+/* Estilos aplicados ao corpo (body) da página */
+body {
+    background-color: var(--background); /* Define a cor de fundo usando a variável "--background" */
+    font-family: var(--font-primary); /* Define a fonte principal para o texto */
+    color: var(--color-text); /* Define a cor do texto usando a variável "--color-text" */
 }
 
-img{
-    display: block;
+/* Estilos para todas as imagens na página */
+img {
+    display: block; /* Define imagens como blocos para controlar o espaço ao redor */
 }
 
-.title{
-    font-size: 4rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0.5rem;
-    color: var(--color-title);
-    font-family: var(--font-display);
-    letter-spacing: 2px;
+/* Estilos para elementos com a classe "title" */
+.title {
+    font-size: 4rem; /* Define o tamanho da fonte */
+    max-width: 1200px; /* Define a largura máxima do título */
+    margin: 2rem auto; /* Define margens e centraliza horizontalmente */
+    padding: 0.5rem; /* Adiciona preenchimento interno */
+    color: var(--color-title); /* Define a cor do título usando a variável "--color-title" */
+    font-family: var(--font-display); /* Define a fonte usando a variável "--font-display" */
+    letter-spacing: 2px; /* Adiciona espaçamento entre letras */
 }
 
-.title-faq{
-    font-size: 4rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0.5rem;
-    color: var(--color-title);
-    font-family: var(--font-display);
-    letter-spacing: 2px;
+/* Estilos para elementos com a classe "title-faq" */
+.title-faq {
+    font-size: 4rem; /* Define o tamanho da fonte */
+    max-width: 1200px; /* Define a largura máxima do título */
+    margin: 2rem auto; /* Define margens e centraliza horizontalmente */
+    padding: 0.5rem; /* Adiciona preenchimento interno */
+    color: var(--color-title); /* Define a cor do título usando a variável "--color-title" */
+    font-family: var(--font-display); /* Define a fonte usando a variável "--font-display" */
+    letter-spacing: 2px; /* Adiciona espaçamento entre letras */
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+/* Estilos para elementos com a classe "container" */
+.container {
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Define margens e centraliza horizontalmente */
+    padding: 1rem; /* Adiciona preenchimento interno */
 }
 
+/* Estilos para tamanhos de tela menores (responsivos) */
 @media screen and (max-width: 768px) {
-    .title{
-        font-size: 2.5rem;
+    .title {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte para telas menores */
     }
-    .title-faq{
-        font-size: 2.5rem;
+    .title-faq {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte para telas menores nas FAQs */
     }
 }
 
 @media screen and (max-width: 415px) {
-    .title{
-        font-size: 2rem;
-        align-items: center;
-        text-align: center;
+    .title {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas */
+        align-items: center; /* Centraliza verticalmente o texto */
+        text-align: center; /* Centraliza o texto horizontalmente */
     }
-    .title-faq{
-        font-size: 2rem;
+    .title-faq {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas nas FAQs */
     }
 }
 
-
 @media screen and (max-width: 380px) {
-    .title{
-        font-size: 2rem;
+    .title {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas */
     }
-    .title{
-        font-size: 2rem;
+    .title {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas nas FAQs */
     }
 }
