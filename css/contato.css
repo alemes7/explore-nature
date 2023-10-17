@@ -1,8 +1,9 @@
-.contato{
-    margin-left: 155px;
+/* Estilos padrão para a seção de contato */
+.contato {
+    margin-left: 155px; /* Margem esquerda de 155px */
 }
 
-#contato-maintittle{
+#contato-maintittle {
     color: #565756;
     font-family: Playfair Display SC;
     font-size: 64px;
@@ -10,90 +11,95 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaço inferior de 20px */
 }
 
-.contato-list{
-    display: flex;
+.contato-list {
+    display: flex; /* Define como um flex container */
 }
 
-#contato-list{
-    padding: 50px;
+#contato-list {
+    padding: 50px; /* Preenchimento interno de 50px */
 }
 
+/* Estilos para diferentes larguras de tela (responsividade) */
 @media screen and (max-width: 1290px) {
-    .contato{
-        margin-left: 10px;
+    /* Quando a largura da tela for igual ou inferior a 1290px */
+    .contato {
+        margin-left: 10px; /* Reduz a margem esquerda */
     }
 
-    .contato-list{
-        display: block;
+    .contato-list {
+        display: block; /* Muda para um bloco em vez de flex */
     }
 
-    #contato-list-itens{
-        padding: 0px;
+    #contato-list-itens {
+        padding: 0px; /* Remove o preenchimento */
     }
 }
 
 @media screen and (max-width: 768px) {
-    .contato{
-        margin-left: 5px;
+    /* Quando a largura da tela for igual ou inferior a 768px */
+    .contato {
+        margin-left: 5px; /* Reduz a margem esquerda */
     }
 
-    #contato-maintittle{
-        font-size: 32px;
+    #contato-maintittle {
+        font-size: 32px; /* Reduz o tamanho da fonte */
     }
 
-    .contato-list{
-        display: block;
+    .contato-list {
+        display: block; /* Muda para um bloco em vez de flex */
     }
 
-    #contato-list-itens{
-        padding: 0px;
+    #contato-list-itens {
+        padding: 0px; /* Remove o preenchimento */
     }
 }
 
 @media screen and (max-width: 415px) {
-    .contato{
-        margin-left: 5px;
+    /* Quando a largura da tela for igual ou inferior a 415px */
+    .contato {
+        margin-left: 5px; /* Reduz a margem esquerda */
     }
 
-    #contato-maintittle{
-        font-size: 32px;
+    #contato-maintittle {
+        font-size: 32px; /* Reduz o tamanho da fonte */
     }
 
-    .contato-list{
-        display: block;
+    .contato-list {
+        display: block; /* Muda para um bloco em vez de flex */
     }
 
-    #contato-list-itens{
-        padding: 0px;
+    #contato-list-itens {
+        padding: 0px; /* Remove o preenchimento */
     }
 
-    .contato-list-map{
-        max-width: 405px;
+    .contato-list-map {
+        max-width: 405px; /* Define a largura máxima do mapa */
     }
 }
 
 @media screen and (max-width: 380px) {
-    .contato{
-        margin-left: 5px;
+    /* Quando a largura da tela for igual ou inferior a 380px */
+    .contato {
+        margin-left: 5px; /* Reduz a margem esquerda */
     }
 
-    #contato-maintittle{
-        font-size: 32px;
+    #contato-maintittle {
+        font-size: 32px; /* Reduz o tamanho da fonte */
     }
 
-    .contato-list{
-        display: block;
+    .contato-list {
+        display: block; /* Muda para um bloco em vez de flex */
     }
 
-    #contato-list-itens{
-        padding: 0px;
+    #contato-list-itens {
+        padding: 0px; /* Remove o preenchimento */
     }
 
-    .contato-list-map{
-        max-width: 365px;
-        max-height: 500px;
+    .contato-list-map {
+        max-width: 365px; /* Define a largura máxima do mapa */
+        max-height: 500px; /* Define a altura máxima do mapa */
     }
 }
